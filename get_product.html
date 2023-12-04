@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Get Product</h1>
+    <form method="post">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id" required><br><br>
+
+        <input type="submit" value="Get Product">
+    </form>
+    <img src="{{ url_for('static', filename='Unknown.jpeg') }}" alt="Product Image 1">
+    <img src="{{ url_for('static', filename='Unknown-1.jpeg') }}" alt="Product Image 2">
+    <a href="{{ url_for('home') }}">Home</a>
+</body>
+</html>

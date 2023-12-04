@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Products</h1>
+    <nav>
+        <ul>
+             <li><a href="{{ url_for('home') }}">Home</a></li> | 
+             <li><a href="{{ url_for('get_product') }}">Get Product</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

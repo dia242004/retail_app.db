@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Customers</h1>
+    <nav>
+        <ul>
+             <li><a href="{{ url_for('home') }}">Home</a></li>| 
+             <li><a href="{{ url_for('add_customer') }}">Add Customer</a></li>
+        <ul>
+    </nav>
+</body>
+</html>
